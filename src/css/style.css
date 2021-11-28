@@ -1,0 +1,41 @@
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    border: forestgreen solid 3px;
+}
+
+#main {
+    display: flex;
+    align-self: stretch;
+    height: 100%;
+    width: 100%;
+    border: mediumblue solid 3px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    border: deeppink solid 3px;
+}

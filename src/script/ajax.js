@@ -1,17 +1,14 @@
-function GetDevoirs() {
-    var request = $.ajax({
-        url: "http://madsioagenda.alwaysdata.net/api/devoirs",
-        method: "GET",
-        dataType: "json",
-        crossDomain: true
-    });
+var request = $.ajax({
+    url: "https://madsioagenda.alwaysdata.net/api/devoirs",
+    method: "GET",
+    dataType: "json"
+});
 
-    request.done(function (data) {
-        console.log(data);
-    })
+request.done(function (data) {
+    console.log(data);
+});
 
-    request.fail(function (jqXHR, textStatus) {
-        console.log(jqXHR);
-        console.log(textStatus);
-    })
-}
+request.fail(function (jqXHR, textStatus) {
+    console.log(jqXHR);
+    console.log(textStatus);
+});
