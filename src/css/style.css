@@ -1,41 +1,47 @@
-#root {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-html {
-    height: 100%;
-}
-body {
+.flex-box {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    width: 100%;
+.box {
+    box-sizing: border-box;
+}
+
+.header {;
+    height: 50px;
     border: forestgreen solid 3px;
 }
 
-#main {
+.main {
     display: flex;
-    align-self: stretch;
+    flex-direction: row;
     height: 100%;
-    width: 100%;
     border: mediumblue solid 3px;
 }
 
-footer {
-    display: flex;
+.main-box {
+    box-sizing: border-box;
+    border: darkred solid 3px;
+    height: 100%;
+}
+
+.nav {
+    min-width: 60px;
+    max-width: 200px;
+}
+
+.content {
     width: 100%;
-    align-items: flex-end;
+}
+
+.footer {;
+    height: 30px;
     border: deeppink solid 3px;
 }
